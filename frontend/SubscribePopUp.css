@@ -1,0 +1,113 @@
+:root {
+    --text-color: #151936;
+}
+
+body {
+    color: var(--text-color);
+    background-color: #edeef7;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.container {
+    width: 50%;
+    height: 450px;
+    padding: 25px 30px;
+    background-color: rgba(250,250,252,0.85);
+    border-radius: 25px;
+    z-index: 2;
+}
+
+.bg-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.circle1 {
+    margin: 450px 0 0 175px;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(90deg, rgba(234,147,84,1) 0%, rgba(247,225,220,1) 100%);
+    border-radius: 100%;
+    filter: blur(2rem);
+}
+
+.circle2 {
+    margin: -450px 0 0 500px;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(41deg, rgba(255,221,197,1) 20%, rgba(219,172,220,1) 50%, rgba(34,218,240,1) 100%);
+    border-radius: 100%;
+    filter: blur(2rem);
+}
+
+.header-container {
+    display: flex;
+    justify-content: right;
+}
+
+.header-container button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid #edeef7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.main-container input[type=email] {
+    width: 60%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 12px;
+    border: 2px solid #edeef7;
+    color: black;
+}
+
+input::placeholder {
+    color: var(--text-color);
+}
+
+.subscribe {
+    display: flex;
+    gap: 10px;
+    width: 60%;
+    font-size: 12px;
+    text-align: left;
+}
+
+.subscribe input {
+    margin-bottom: 20px;
+}
+
+.sub-button {
+    width: 60%;
+    height: 50px;
+    color: white;
+    background-color: #2d2865;
+    border-radius: 3px;
+    margin-top: 10px;
+    box-shadow: #9692c1 0px 5px;
+    transition: 0.5s all;
+}
+
+.sub-button:hover {
+    box-shadow: #9692c1 0px 5px, #d7d4fa 0px 10px, #efeefd 0px 15px;
+}
