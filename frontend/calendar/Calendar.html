@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex justify-center items-center min-h-screen">
+    <div class="container bg-white text-[#181028] shadow-lg rounded-sm">
+        <div class="calendar">
+            <div class="calendar-nav">
+                <button id="prev-month" class="prev-month">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 1024 1024">
+                        <path fill="#FFFFFF" d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z" />
+                        <path fill="#FFFFFF"
+                            d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z" />
+                    </svg>
+                </button>
+                <span id="month-and-year" class="month-and-year"></span>
+                <button id="next-month" class="next-month">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 1024 1024">
+                        <path fill="#FFFFFF"
+                            d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312L754.752 480z" />
+                    </svg>
+                </button>
+            </div>
+            <ul class="weekdays">
+                <li>SUN</li>
+                <li>MON</li>
+                <li>TUE</li>
+                <li>WED</li>
+                <li>THU</li>
+                <li>FRI</li>
+                <li>SAT</li>
+            </ul>
+            <ul class="calendar-dates"></ul>
+        </div>
+        <div class="events-sidebar">
+            <div class="events-header">SELECT A DATE</div>
+            <div class="no-events">
+                <svg id="no-events-svg" xmlns="http://www.w3.org/2000/svg" width="100px" height="100px" viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M3 9H21M17 13.0014L7 13M10.3333 17.0005L7 17M7 3V5M17 3V5M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z"
+                    stroke="#402e82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            No events for this day
+            </div>
+            <div class="add-event">
+                <button>ADD EVENT</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
