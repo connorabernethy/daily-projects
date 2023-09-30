@@ -1,5 +1,5 @@
 # Daily Projects
-Daily projects made in a variety of technologies and genres. All created by Connor Abernethy.
+Daily front-end projects made in a variety of technologies and genres. All created by Connor Abernethy.
 
 ## Front-End Projects
 
